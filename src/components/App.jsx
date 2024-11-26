@@ -4,7 +4,6 @@ import Header from "./Header";
 import Home from "./Home";
 import Login from "./Login";
 import Register from "./Register";
-
 import PageRooms from "./PageRooms";
 
 const App = () => {

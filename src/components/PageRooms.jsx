@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import CalendarComponent from "./CalendarComponent";
-
+import Rooms from "./Rooms";
 
 // Componente del carrusel
 const HorizontalCardScroll = () => {
-    
 
   const cardData = [
 
@@ -98,8 +97,9 @@ const PageRooms = () => {
       <h1 className="text-3xl font-bold text-center my-4">Reserva tu Espacio</h1>
       <h2 className="text-3xl font-bold text-center my-4">{currentDate}</h2>
       <HorizontalCardScroll />
-      <h1 className="text-3xl font-bold text-center my-4">Fechas habilitadas para reserva</h1>
+      <h2 className="text-3xl font-bold text-center my-4">Fechas habilitadas para reserva</h2>
       <CalendarComponent />
+      <Rooms/>
     </>
   );
 };
