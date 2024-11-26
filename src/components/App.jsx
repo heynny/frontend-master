@@ -5,7 +5,7 @@ import Home from "./Home";
 import Login from "./Login";
 import Register from "./Register";
 import Productos from "./Productos";
-import Rooms from "./Rooms";
+import PageRooms from "./PageRooms";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/productos" element={<Productos />} />
-        <Route path="/Rooms" element= {<Rooms/>}/>
+        <Route path="/PageRooms" element= {<PageRooms/>}/>
       </Routes>
     </>
   );

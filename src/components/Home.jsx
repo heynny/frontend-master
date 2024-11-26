@@ -1,16 +1,15 @@
-import React, {Route} from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../styles/Home.module.css";  // Importar el CSS Module
-import Register from "./Register";
+
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.header}>Bienvenido a ReserverRooms</h1>
         <p className={styles.paragraph}>Aquí puedes agendar tu Room.</p>
-        <button className={styles.button} onClick={
-
-<Route path="/register" element={<Register />} />
-        }>Comenzar</button>
+        <button className={styles.button} onClick={()=>navigate('/PageRooms')}>Comenzar</button>
       </div>
     </div>
   );
