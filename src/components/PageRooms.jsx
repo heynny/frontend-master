@@ -3,13 +3,17 @@ import { useState, useEffect } from "react";
 
 // Componente del carrusel
 const HorizontalCardScroll = () => {
+    
 
   const cardData = [
 
     {
+    
       id: 1,
       title: 'Sala de Reuniones',
       image: 'https://via.placeholder.com/300x200?text=Sala+1',
+
+
     },
     {
       id: 2,
