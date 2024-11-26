@@ -1,0 +1,59 @@
+/* Header.module.css */
+.header {
+    background-color: #2d3748; /* Color oscuro para el fondo */
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    background-color: #4a5568; /* Fondo al pasar el cursor */
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userIcon {
+    color: #cbd5e0; /* Color para el icono del usuario */
+    margin-right: 0.5rem;
+  }
+  
+  .logoutButton {
+    background-color: transparent;
+    border: none;
+    color: #f56565; /* Color rojo para el botón de cerrar sesión */
+    cursor: pointer;
+  }
+  
+  .logoutButton:hover {
+    color: #e53e3e; /* Color más fuerte al pasar el cursor */
+  }
+  

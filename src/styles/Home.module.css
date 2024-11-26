@@ -1,0 +1,40 @@
+/* Home.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/img/Diseño\ sin\ título.png'); /* Ruta de la imagen */
+  background-size: cover;  /* Asegura que la imagen cubra todo el fondo */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+}
+
+.textContainer {
+  text-align: center;
+}
+
+.header {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #ff5722; /* Naranja */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.paragraph {
+  font-size: 1.125rem; /* text-lg */
+  color: #00796b; /* Verde oscuro */
+}
+
+.button {
+  margin-top: 1rem; /* mt-4 */
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  background-color: #00897b; /* Verde turquesa */
+  color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #004d40; /* Verde más oscuro en hover */
+}
