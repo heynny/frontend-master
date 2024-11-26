@@ -9,50 +9,49 @@ const HorizontalCardScroll = () => {
   const cardData = [
 
     {
-    
       id: 1,
       title: 'Sala de Reuniones',
-      image: 'https://via.placeholder.com/300x200?text=Sala+1',
+      image: require('../img/salas/sala1.png'),
 
 
     },
     {
       id: 2,
       title: 'Oficina Privada',
-      image: 'https://via.placeholder.com/300x200?text=Oficina+Privada',
+      image: require('../img/salas/sala2.png'),
     },
     {
       id: 3,
       title: 'Área de Co-working',
-      image: 'https://via.placeholder.com/300x200?text=Co-working',
+      image: require('../img/salas/sala3.png'),
     },
     {
       id: 4,
       title: 'Sala de Conferencias',
-      image: 'https://via.placeholder.com/300x200?text=Conferencias',
+      image: require('../img/salas/sala4.png'),
     },
     {
         id: 5,
         title: 'Sala de Conferencias',
-        image: 'https://via.placeholder.com/300x200?text=Conferencias',
+        image: require('../img/salas/sala5.png'),
       },
       {
         id: 6,
         title: 'Sala de Conferencias',
-        image: 'https://via.placeholder.com/300x200?text=Conferencias',
+        image: require('../img/salas/sala6.png'),
       },
       {
         id: 7,
         title: 'Sala de Conferencias',
-        image: 'https://via.placeholder.com/300x200?text=Conferencias',
+        image: require('../img/salas/sala7.png'),
       },
       {
         id: 8,
         title: 'Sala de Conferencias',
-        image: 'https://via.placeholder.com/300x200?text=Conferencias',
+        image: require('../img/salas/sala8.png'),
       },
   ];
- 
+
   return (
     <div className="w-full py-6 overflow-x-scroll scroll-smooth scrollbar-hide">
       <div className="flex space-x-4">
@@ -98,9 +97,8 @@ const PageRooms = () => {
       <h1 className="text-3xl font-bold text-center my-4">Reserva tu Espacio</h1>
       <h2 className="text-3xl font-bold text-center my-4">{currentDate}</h2>
       <HorizontalCardScroll />
-      <h2 className="text-3xl font-bold text-center my-4">Fechas habilitadas para reserva</h2>
+      <h1 className="text-3xl font-bold text-center my-4">Reserva tu Espacio</h1>
       <CalendarComponent />
-      
       <Rooms/>
       <Footer/>
     </>

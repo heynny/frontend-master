@@ -1,40 +1,96 @@
 /* Home.module.css */
+
+/* Contenedor principal */
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/img/Diseño\ sin\ título.png'); /* Ruta de la imagen */
-  background-size: cover;  /* Asegura que la imagen cubra todo el fondo */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  background-image: url('/src/img/Diseño\ sin\ título.png'); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
 }
 
+/* Texto de bienvenida */
 .textContainer {
   text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem; /* Separación entre la bienvenida y "Acerca de Nosotros" */
 }
 
 .header {
-  font-size: 2.25rem; /* text-4xl */
-  font-weight: 700; /* font-bold */
-  color: #ff5722; /* Naranja */
-  margin-bottom: 1rem; /* mb-4 */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffeac5; /* Naranja */
+  margin-bottom: 0.5rem;
 }
 
 .paragraph {
-  font-size: 1.125rem; /* text-lg */
-  color: #00796b; /* Verde oscuro */
+  font-size: 1rem;
+  color: #ffffff; /* Blanco */
+  margin-bottom: 1rem;
 }
 
 .button {
-  margin-top: 1rem; /* mt-4 */
-  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
   background-color: #00897b; /* Verde turquesa */
   color: white;
-  border-radius: 0.5rem; /* rounded-lg */
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
   background-color: #004d40; /* Verde más oscuro en hover */
+}
+
+/* Contenedor de "Acerca de Nosotros" */
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo translúcido */
+  border-radius: 0.5rem;
+  color: white;
+}
+
+/* Texto de "Acerca de Nosotros" */
+.aboutText {
+  flex: 1; /* Ocupa más espacio en el contenedor */
+  text-align: left;
+}
+
+.aboutHeader {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.aboutParagraph {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Imagen decorativa */
+.aboutImage {
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  width: 150px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
 }

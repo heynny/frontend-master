@@ -1,59 +1,67 @@
-/* Header.module.css */
+/* Estilos del Header */
 .header {
-    background-color: #2d3748; /* Color oscuro para el fondo */
-    padding: 1rem;
+    background-color: #362812; /* Color café para el fondo */
+    padding: 1rem; /* Padding más grande para dar un poco de espacio */
+    text-align: center; /* Centra el texto dentro del header */
   }
   
+  /* Estilo para la barra de navegación */
   .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra los elementos dentro de la barra */
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
   }
   
+  /* Estilo para el título */
   .title {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.5rem; /* Tamaño del texto del título */
+    color: white; /* Color blanco para el texto */
     font-weight: bold;
   }
   
+  /* Estilos para los enlaces de la barra de navegación */
   .navLinks {
     display: flex;
-    gap: 1rem;
+    gap: 1rem; /* Espacio entre los enlaces */
     align-items: center;
+    justify-content: center; /* Centra los enlaces */
   }
   
   .navLink {
     color: white;
     text-decoration: none;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navLink:hover {
-    background-color: #4a5568; /* Fondo al pasar el cursor */
-  }
-  
-  .userInfo {
+    font-size: 1rem; /* Tamaño del texto de los enlaces */
+    padding: 0.5rem; /* Espaciado dentro del enlace */
+    border-radius: 0.25rem; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición al pasar el cursor */
+}
+
+.navLink:hover {
+    background-color: #4a5568; /* Color de fondo al pasar el cursor */
+}
+
+  /* Estilos para la información del usuario */
+.userInfo {
     display: flex;
     align-items: center;
-  }
-  
-  .userIcon {
-    color: #cbd5e0; /* Color para el icono del usuario */
-    margin-right: 0.5rem;
-  }
-  
-  .logoutButton {
-    background-color: transparent;
+    gap: 0.5rem; /* Espacio entre el icono y el nombre */
+}
+
+.userIcon {
+    color: #cbd5e0; /* Color del icono del usuario */
+}
+
+.logoutButton {
+    background-color: #e53e3e; /* Color de fondo rojo para el botón de logout */
+    color: white;
     border: none;
-    color: #f56565; /* Color rojo para el botón de cerrar sesión */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-  }
-  
-  .logoutButton:hover {
-    color: #e53e3e; /* Color más fuerte al pasar el cursor */
-  }
-  
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #c53030; /* Color más oscuro al pasar el cursor */
+}
