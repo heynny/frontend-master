@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import styles from "../styles/Header.module.css"; // Importar el CSS Module
+import styles from "../styles/Header.module.css"; // Asegúrate de importar el archivo CSS correctamente
 
 const Header = () => {
   const [usuario, setUsuario] = useState(null);

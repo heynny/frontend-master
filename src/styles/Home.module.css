@@ -1,37 +1,47 @@
 /* Home.module.css */
+
+/* Estilos del contenedor principal */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: url('/img/Diseño\ sin\ título.png'); /* Ruta de la imagen */
-  background-size: cover;  /* Asegura que la imagen cubra todo el fondo */
-  background-position: center;  /* Centra la imagen */
-  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 1rem; /* Agrega un poco de espacio interior */
 }
 
+/* Estilos para el texto dentro del contenedor */
 .textContainer {
   text-align: center;
+  padding: 0.5rem; /* Reduce el espacio interno */
 }
 
+/* Encabezado principal */
 .header {
-  font-size: 2.25rem; /* text-4xl */
+  font-size: 1.5rem; /* Tamaño reducido (text-2xl) */
   font-weight: 700; /* font-bold */
-  color: #ff5722; /* Naranja */
-  margin-bottom: 1rem; /* mb-4 */
+  color: #FFEAC5; /* Naranja */
+  margin-bottom: 0.5rem; /* mb-2 */
 }
 
+/* Párrafo descriptivo */
 .paragraph {
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1rem; /* Tamaño reducido (text-base) */
   color: #00796b; /* Verde oscuro */
+  margin-bottom: 1rem; /* Espaciado adicional */
 }
 
+/* Botón de acción */
 .button {
-  margin-top: 1rem; /* mt-4 */
-  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  margin-top: 0.5rem; /* mt-2 */
+  padding: 0.4rem 1rem; /* px-4 py-1 */
   background-color: #00897b; /* Verde turquesa */
   color: white;
-  border-radius: 0.5rem; /* rounded-lg */
+  border-radius: 0.25rem; /* rounded-md */
+  font-size: 0.875rem; /* text-sm */
   transition: background-color 0.3s ease;
 }
 

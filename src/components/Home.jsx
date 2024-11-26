@@ -1,6 +1,6 @@
 import React, {Route} from "react";
 import styles from "../styles/Home.module.css";  // Importar el CSS Module
-import Register from "./Register";
+import Productos from "./Productos";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -9,7 +9,7 @@ const Home = () => {
         <p className={styles.paragraph}>Aquí puedes agendar tu Room.</p>
         <button className={styles.button} onClick={
 
-<Route path="/register" element={<Register />} />
+<Route path="/productos" element={<Productos />} />
         }>Comenzar</button>
       </div>
     </div>
