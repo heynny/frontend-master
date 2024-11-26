@@ -9,6 +9,7 @@
   height: 100vh;
   background-image: url('/src/img/Diseño\ sin\ título.png'); /* Imagen de fondo */
   background-size: cover;
+  
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem;
