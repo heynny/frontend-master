@@ -7,7 +7,7 @@ const Register = () => {
   const [name, setName] = useState("");
   const [empresa, setEmpresa] = useState("");
   const [cargo, setCargo] = useState("");
-  const [nit, setNit] = useState("");
+  const [numberPhone, setNit] = useState("");
   const [error, setError] = useState("");
 
   const handleRegister = async (e) => {
@@ -16,7 +16,7 @@ const Register = () => {
 
     // Validación del NIT
     const nitPattern = /^[0-9]{4,10}[A-Za-z]{1,5}$/;
-    if (!nitPattern.test(nit)) {
+    if (!nitPattern.test(numberPhone)) {
       setError("El NIT debe seguir el formato válido.");
       return;
     }
@@ -28,7 +28,7 @@ const Register = () => {
         password,
         empresa,
         cargo,
-        nit,
+        numberPhone,
       });
       console.log("Usuario registrado:", response.data);
       alert("Usuario registrado correctamente");
@@ -49,7 +49,7 @@ const Register = () => {
         <form onSubmit={handleRegister}>
           <input
             type="text"
-            placeholder="Nombre completo"
+            placeholder="Nombre"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -77,18 +77,19 @@ const Register = () => {
           />
           <input
             type="text"
+            placeholder="Telefono"
+            value={numberPhone}
+            onChange={(e) => setNit(e.target.value)}
+            className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="text"
             placeholder="Cargo"
             value={cargo}
             onChange={(e) => setCargo(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <input
-            type="text"
-            placeholder="NIT"
-            value={nit}
-            onChange={(e) => setNit(e.target.value)}
-            className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
