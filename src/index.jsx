@@ -1,12 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/index.css";
 import App from "./components/App";
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root")); // Crear el root usando la nueva API
+root.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+  </BrowserRouter>
 );

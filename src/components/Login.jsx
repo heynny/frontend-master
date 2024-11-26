@@ -22,7 +22,7 @@ const Login = () => {
         "usuario",
         JSON.stringify({ nombre: response.data.nombre }) 
       );
-      navigate("/productos"); 
+      navigate("/PageRooms"); 
     } catch (err) {
       if (err.response) {
         setError(err.response.data.mensaje || "Error al iniciar sesión");

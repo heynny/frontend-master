@@ -2,33 +2,26 @@ import React, { useState } from "react";
 import apiClient from "../api/axiosConfig";
 
 const Register = () => {
-  const [email, setEmail] = useState("");
+  const [nombre, setName] = useState("");
+  const [correo, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
   const [empresa, setEmpresa] = useState("");
-  const [cargo, setCargo] = useState("");
-  const [numberPhone, setNit] = useState("");
+  const [telefono, setNumber] = useState("");
+  const [rol, setRol] = useState("");
   const [error, setError] = useState("");
 
   const handleRegister = async (e) => {
     e.preventDefault();
     setError("");
-
-    // Validación del NIT
-    const nitPattern = /^[0-9]{4,10}[A-Za-z]{1,5}$/;
-    if (!nitPattern.test(numberPhone)) {
-      setError("El NIT debe seguir el formato válido.");
-      return;
-    }
-
+  
     try {
-      const response = await apiClient.post("/usuarios/register", {
-        name,
-        email,
+      const response = await apiClient.post("/usuarios/registro", {
+        nombre,
+        correo,
         password,
         empresa,
-        cargo,
-        numberPhone,
+        telefono, 
+        rol   
       });
       console.log("Usuario registrado:", response.data);
       alert("Usuario registrado correctamente");
@@ -50,14 +43,14 @@ const Register = () => {
           <input
             type="text"
             placeholder="Nombre"
-            value={name}
+            value={nombre}
             onChange={(e) => setName(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             type="email"
             placeholder="Correo electrónico"
-            value={email}
+            value={correo}
             onChange={(e) => setEmail(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
@@ -78,15 +71,15 @@ const Register = () => {
           <input
             type="text"
             placeholder="Telefono"
-            value={numberPhone}
-            onChange={(e) => setNit(e.target.value)}
+            value={telefono}
+            onChange={(e) => setNumber(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <input
+                    <input
             type="text"
-            placeholder="Cargo"
-            value={cargo}
-            onChange={(e) => setCargo(e.target.value)}
+            placeholder="user/admin"
+            value={rol}
+            onChange={(e) => setRol(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           
