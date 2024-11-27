@@ -80,14 +80,13 @@ const Register = () => {
             onChange={(e) => setNumber(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-                    <input
+                  <input
             type="text"
-            placeholder="Cargo"
-            value={cargo}
-            onChange={(e) => setCargo(e.target.value)}
+            placeholder="user/admin"
+            value={rol}
+            onChange={(e) => setRol(e.target.value)}
             className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          
           <button
             type="submit"
             className={`${styles.button} w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600`}

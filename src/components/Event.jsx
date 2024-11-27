@@ -1,38 +1,39 @@
 import React from 'react';
+
     const HorizontalCardScroll = () => {
 
   const cardData = [
 
     {
       id: 1,
-      title: 'Sala de Reuniones',
-      image: require('../img/salas/sala1.png'),
+      title: 'Hackathon',
+      image: 'https://img.impactotic.co/wp-content/uploads/2024/11/25174658/gran-hackathon-en-el-NIDO-de-Cali-1024x768.jpg.webp',
 
 
     },
     {
       id: 2,
-      title: 'Oficina Privada',
+      title: 'Club de lectura',
       image: require('../img/salas/sala2.png'),
     },
     {
       id: 3,
-      title: 'Área de Co-working',
+      title: 'Monitorias Avanzadas',
       image: require('../img/salas/sala3.png'),
     },
     {
       id: 4,
-      title: 'Sala de Conferencias',
+      title: 'Conferencias AWS',
       image: require('../img/salas/sala4.png'),
     },
     {
         id: 5,
-        title: 'Sala de Conferencias',
+        title: 'Reunion manejo empresarial',
         image: require('../img/salas/sala5.png'),
       },
       {
         id: 6,
-        title: 'Sala de Conferencias',
+        title: 'Lab de programación',
         image: require('../img/salas/sala6.png'),
       }
   ];
@@ -52,10 +53,12 @@ import React from 'react';
             />
             <div className="p-4">
               <h3 className="text-lg font-bold text-gray-800">{card.title}</h3>
-              <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" onClick={()=>{}}
+              <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" onClick={()=>{
+               
+              }}
                 
               >
-                Reservar
+                ir
               </button>
             </div>
           </div>
