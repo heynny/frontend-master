@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import CalendarComponent from "./CalendarComponent";
 import Rooms from "./Rooms";
 import Footer from "./Footer";
-
+import Events from "./Event";
 // Componente del carrusel
 const HorizontalCardScroll = () => {
-
+  const [resrva, setReserva] = useState({ });
   const cardData = [
 
     {
@@ -67,7 +67,9 @@ const HorizontalCardScroll = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-bold text-gray-800">{card.title}</h3>
-              <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" onClick={()=>{}}
+                
+              >
                 Reservar
               </button>
             </div>
@@ -81,6 +83,7 @@ const HorizontalCardScroll = () => {
 // Componente principal
 const PageRooms = () => {
     const [currentDate, setCurrentDate] = useState('');
+    
     useEffect(() => {
         // Obtenemos la fecha actual al cargar el componente
         const now = new Date();
@@ -100,6 +103,7 @@ const PageRooms = () => {
       <h1 className="text-3xl font-bold text-center my-4">Reserva tu Espacio</h1>
       <CalendarComponent />
       <Rooms/>
+      <Events/>
       <Footer/>
     </>
   );

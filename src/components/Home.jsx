@@ -12,7 +12,7 @@ const Home = () => {
         <p className={styles.paragraph}>Aquí puedes agendar tu Room.</p>
         <button
           className={styles.button}
-          onClick={() => navigate("/PageRooms")}
+          onClick={() => navigate("/Login")}
         >
           Comenzar
         </button>
