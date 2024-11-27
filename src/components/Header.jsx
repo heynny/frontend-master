@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import styles from "../styles/Header.module.css"; // Asegúrate de importar el archivo CSS correctamente
+import styles from "../styles/Header.module.css";
+import logo from '../img/logito.png';
 
 const Header = () => {
   const [usuario, setUsuario] = useState(null);
@@ -26,9 +27,12 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <h1 className={styles.title}>ReserveRooms</h1>
+        <div className={styles.logoContainer}>
+          <img src={logo} alt="Logo" className={styles.logo} />
+          <h1 className={styles.title}>ReserveRooms</h1>
+        </div>
         <div className={styles.navLinks}>
-          {location.pathname === "/Rooms" && usuario ? ( // Mostrar solo en /Rooms
+          {location.pathname === "/Rooms" && usuario ? (
             <>
               <div className={styles.userInfo}>
                 <FontAwesomeIcon icon={faUser} className={styles.userIcon} />
@@ -48,9 +52,7 @@ const Header = () => {
                   Iniciar sesión
                 </Link>
               )}
-              <Link to="/register" className={styles.navLink}>
-                Registrarse
-              </Link>
+              
             </>
           )}
         </div>

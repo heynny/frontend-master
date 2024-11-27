@@ -1,67 +1,75 @@
-/* Estilos del Header */
 .header {
-    background-color: #362812; /* Color café para el fondo */
-    padding: 1rem; /* Padding más grande para dar un poco de espacio */
-    text-align: center; /* Centra el texto dentro del header */
-  }
-  
-  /* Estilo para la barra de navegación */
-  .navbar {
-    display: flex;
-    justify-content: center; /* Centra los elementos dentro de la barra */
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* Estilo para el título */
-  .title {
-    font-size: 1.5rem; /* Tamaño del texto del título */
-    color: white; /* Color blanco para el texto */
-    font-weight: bold;
-  }
-  
-  /* Estilos para los enlaces de la barra de navegación */
-  .navLinks {
-    display: flex;
-    gap: 1rem; /* Espacio entre los enlaces */
-    align-items: center;
-    justify-content: center; /* Centra los enlaces */
-  }
-  
-  .navLink {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem; /* Tamaño del texto de los enlaces */
-    padding: 0.5rem; /* Espaciado dentro del enlace */
-    border-radius: 0.25rem; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición al pasar el cursor */
+  background-color: #362812;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #D1B49B;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
 }
 
 .navLink:hover {
-    background-color: #4a5568; /* Color de fondo al pasar el cursor */
+  background-color: #4a5568;
 }
 
-  /* Estilos para la información del usuario */
 .userInfo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; /* Espacio entre el icono y el nombre */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .userIcon {
-    color: #cbd5e0; /* Color del icono del usuario */
+  color: #cbd5e0;
 }
 
 .logoutButton {
-    background-color: #e53e3e; /* Color de fondo rojo para el botón de logout */
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .logoutButton:hover {
-    background-color: #c53030; /* Color más oscuro al pasar el cursor */
+  background-color: #c53030;
 }

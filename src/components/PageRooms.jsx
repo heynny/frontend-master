@@ -2,75 +2,37 @@ import { useState, useEffect } from "react";
 import CalendarComponent from "./CalendarComponent";
 import Rooms from "./Rooms";
 import Footer from "./Footer";
+import styles from "../styles/PageRoom.module.css";
 import Events from "./Event";
+
 // Componente del carrusel
 const HorizontalCardScroll = () => {
-  const [resrva, setReserva] = useState({ });
+
   const cardData = [
-
-    {
-      id: 1,
-      title: 'Sala de Reuniones',
-      image: require('../img/salas/sala1.png'),
-
-
-    },
-    {
-      id: 2,
-      title: 'Oficina Privada',
-      image: require('../img/salas/sala2.png'),
-    },
-    {
-      id: 3,
-      title: 'Área de Co-working',
-      image: require('../img/salas/sala3.png'),
-    },
-    {
-      id: 4,
-      title: 'Sala de Conferencias',
-      image: require('../img/salas/sala4.png'),
-    },
-    {
-        id: 5,
-        title: 'Sala de Conferencias',
-        image: require('../img/salas/sala5.png'),
-      },
-      {
-        id: 6,
-        title: 'Sala de Conferencias',
-        image: require('../img/salas/sala6.png'),
-      },
-      {
-        id: 7,
-        title: 'Sala de Conferencias',
-        image: require('../img/salas/sala7.png'),
-      },
-      {
-        id: 8,
-        title: 'Sala de Conferencias',
-        image: require('../img/salas/sala8.png'),
-      },
+    { id: 1, title: 'Sala de Reuniones', image: require('../img/salas/sala1.png') },
+    { id: 2, title: 'Oficina Privada', image: require('../img/salas/sala2.png') },
+    { id: 3, title: 'Área de Co-working', image: require('../img/salas/sala3.png') },
+    { id: 4, title: 'Sala de Conferencias', image: require('../img/salas/sala4.png') },
+    { id: 5, title: 'Sala de Conferencias', image: require('../img/salas/sala5.png') },
+    { id: 6, title: 'Sala de Conferencias', image: require('../img/salas/sala6.png') },
+    { id: 7, title: 'Sala de Conferencias', image: require('../img/salas/sala7.png') },
+    { id: 8, title: 'Sala de Conferencias', image: require('../img/salas/sala8.png') },
   ];
 
   return (
     <div className="w-full py-6 overflow-x-scroll scroll-smooth scrollbar-hide">
       <div className="flex space-x-4">
         {cardData.map((card) => (
-          <div
-            key={card.id}
-            className="min-w-[300px] rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 bg-white"
-          >
+          <div key={card.id} className={`${styles.cardContainer} min-w-[300px]`}>
             <img
               src={card.image}
               alt={card.title}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className={`${styles.cardImage}`}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold text-gray-800">{card.title}</h3>
-              <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600" onClick={()=>{}}
-                
-              >
-                Reservar
+            <h3 className={`${styles.cardTitle}`}>{card.title}</h3>
+            <button className={`${styles.reserveButton}`}>Reservar
+              Reservar
               </button>
             </div>
           </div>

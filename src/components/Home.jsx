@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/Home.module.css"; // Importar el CSS Module
+import salaImg from '../img/ini.avif'; // Importar la imagen
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <div className={styles.container}>
-      {/* Sección de bienvenida */}
       <div className={styles.textContainer}>
         <h1 className={styles.header}>Bienvenido a ReserverRooms</h1>
         <p className={styles.paragraph}>Aquí puedes agendar tu Room.</p>
@@ -18,7 +18,6 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Nueva sección: Acerca de Nosotros */}
       <div className={styles.aboutContainer}>
         <div className={styles.aboutText}>
           <h2 className={styles.aboutHeader}>Acerca de Nosotros</h2>
@@ -31,7 +30,7 @@ const Home = () => {
         </div>
         <div className={styles.aboutImage}>
           <img
-            src="/img/salas/sala1.png"
+            src={salaImg} // Usando la imagen importada
             alt="Sala de reuniones"
             className={styles.image}
           />

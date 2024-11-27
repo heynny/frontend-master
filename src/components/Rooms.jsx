@@ -1,67 +1,67 @@
 import React from 'react';
+import styles from '../styles/Rooms.module.css';
 
-// Componente Rooms
 const Rooms = () => {
   const cardData = [
     {
       id: 1,
       title: 'Sala de Reuniones',
-      image: 'https://via.placeholder.com/300x200?text=Sala+1',
+      image: require('../img/salas/sala9.png')
     },
     {
       id: 2,
       title: 'Oficina Privada',
-      image: 'https://via.placeholder.com/300x200?text=Oficina+Privada',
+      image: require('../img/salas/sala10.png')
     },
     {
       id: 3,
       title: 'Área de Co-working',
-      image: 'https://via.placeholder.com/300x200?text=Co-working',
+      image: require('../img/salas/sala11.png'),
     },
     {
       id: 4,
       title: 'Sala de Conferencias',
-      image: 'https://via.placeholder.com/300x200?text=Conferencias',
+      image: require('../img/salas/sala12.png'),
     },
     {
       id: 5,
       title: 'Sala de Reuniones',
-      image: 'https://via.placeholder.com/300x200?text=Sala+1',
+      image: require('../img/salas/sala14.png'),
     },
     {
       id: 6,
       title: 'Oficina Privada',
-      image: 'https://via.placeholder.com/300x200?text=Oficina+Privada',
+      image: require('../img/salas/sala15.png'),
     },
     {
       id: 7,
       title: 'Área de Co-working',
-      image: 'https://via.placeholder.com/300x200?text=Co-working',
+      image: require('../img/salas/sala16.png'),
     },
     {
       id: 8,
       title: 'Sala de Conferencias',
-      image: 'https://via.placeholder.com/300x200?text=Conferencias',
+      image: require('../img/salas/sala17.png'),
     },
     {
       id: 9,
       title: 'Sala de Reuniones',
-      image: 'https://via.placeholder.com/300x200?text=Sala+1',
+      image: require('../img/salas/sala18.png'),
     },
     {
       id: 10,
       title: 'Oficina Privada',
-      image: 'https://via.placeholder.com/300x200?text=Oficina+Privada',
+      image: require('../img/salas/sala19.png'),
     },
     {
       id: 11,
       title: 'Área de Co-working',
-      image: 'https://via.placeholder.com/300x200?text=Co-working',
+      image: require('../img/salas/sala20.png'),
     },
     {
       id: 12,
       title: 'Sala de Conferencias',
-      image: 'https://via.placeholder.com/300x200?text=Conferencias',
+      image: require('../img/salas/sala21.png'),
     },
   ];
 
@@ -81,7 +81,7 @@ const Rooms = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-bold text-gray-800">{card.title}</h3>
-              <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              <button className={styles.reservarButton}>
                 Reservar
               </button>
             </div>
