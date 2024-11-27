@@ -1,5 +1,3 @@
-/* Home.module.css */
-
 /* Contenedor principal */
 .container {
   display: flex;
@@ -7,9 +5,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/src/img/Diseño\ sin\ título.png'); /* Imagen de fondo */
+  background-image: url('/src/img/Diseño\ sin\ título.png');
   background-size: cover;
-  
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem;
@@ -18,38 +15,42 @@
 /* Texto de bienvenida */
 .textContainer {
   text-align: center;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 0.5rem;
-  margin-bottom: 2rem; /* Separación entre la bienvenida y "Acerca de Nosotros" */
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #ffeac5; /* Naranja */
+  color: #ffeac5;
   margin-bottom: 0.5rem;
 }
 
 .paragraph {
-  font-size: 1rem;
-  color: #ffffff; /* Blanco */
+  font-size: 1.25rem;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .button {
-  margin-top: 0.5rem;
-  padding: 0.4rem 1rem;
-  background-color: #00897b; /* Verde turquesa */
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #ff6f00;
   color: white;
   border-radius: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #004d40; /* Verde más oscuro en hover */
+  background-color: #e65100;
 }
 
 /* Contenedor de "Acerca de Nosotros" */
@@ -61,15 +62,14 @@
   gap: 1rem;
   padding: 1rem;
   width: 100%;
-  max-width: 800px;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo translúcido */
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
   color: white;
 }
 
-/* Texto de "Acerca de Nosotros" */
 .aboutText {
-  flex: 1; /* Ocupa más espacio en el contenedor */
+  flex: 1;
   text-align: left;
 }
 
@@ -84,14 +84,14 @@
   line-height: 1.5;
 }
 
-/* Imagen decorativa */
 .aboutImage {
-  flex-shrink: 0; /* Evita que la imagen se reduzca */
-  width: 150px;
+  flex-shrink: 0;
+  width: 450px;
 }
 
 .image {
   width: 100%;
+  height: auto;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para la imagen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
